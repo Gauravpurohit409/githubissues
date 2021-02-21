@@ -1,7 +1,6 @@
 import userEvent from '@testing-library/user-event';
 import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
-import { bindActionCreators } from 'redux';
 import ListIssues from '../ListIssues';
 import Repo from '../Repo';
 import './index.css'
