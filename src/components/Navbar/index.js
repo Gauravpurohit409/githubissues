@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav id = "menubar">
         <ul>
           <li>
-            <Link className="link" to="/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></Link>
+            <Link className="link" to="/"><i className="fa fa-github fa-2x" aria-hidden="true"></i></Link>
           </li>
           <li className="search">
             <div >

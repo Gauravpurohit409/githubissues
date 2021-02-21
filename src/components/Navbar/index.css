@@ -1,4 +1,4 @@
-ul{
+#menubar ul{
     display: flex;
     background: #24292E;
     justify-content: start;
