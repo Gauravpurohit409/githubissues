@@ -1,0 +1,19 @@
+ul{
+    display: flex;
+    background: #24292E;
+    justify-content: start;
+}
+
+.link{
+    color:white;
+    margin:10px;
+    text-decoration: none;
+}
+
+.search input{
+    background-color:#24292E;
+}
+
+i{
+    margin-top: -2px;
+}
