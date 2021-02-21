@@ -4,18 +4,16 @@ import './index.css'
 const Navbar = () => {
     return (
 
-
-        <Router>
-    <div>
-      <nav id = "menubar">
-        <ul>
+<>     
+     <Router>
+        
+        <nav id = "menubar">
+         <ul id="menubar-1">
           <li>
             <Link className="link" to="/"><i className="fa fa-github fa-2x" aria-hidden="true"></i></Link>
           </li>
           <li className="search">
-            <div >
-              <input type="text"  placeholder="Search of jump to..." size="25"/>
-            </div>
+               <input type="text"  placeholder="Search of jump to..." />
           </li>
           <li>
             <Link className="link" to="#">Pull requests</Link>
@@ -26,28 +24,21 @@ const Navbar = () => {
           <li>
             <Link className="link" to="#">Marketplace</Link>
           </li>
+          <li> <Link className="link" to = "#" >Explore</Link></li>
+          <li><Link className="link" to = "#"><i class="fa fa-bell " ></i></Link></li>
+          <li><Link className="link" to = "#"><i class="fa fa-plus"></i></Link></li>
+          <li><Link className="link" to = "#"><i class="fa fa-user-circle"></i></Link></li>
+      
         </ul>
       </nav>
-      
-    </div>
+      <h2>Enter the Organisation's name and Repositary in below fields to find all open issues</h2>
+     
    <div id= "justToClearFloat">
      </div>
     <br/>
-    <Switch>
-          <Route path="/" exact>
-            {/* <Home /> */}
-          </Route>
-       
-          <Route path="/discussions">
-            {/* <Discussions /> */}
-          </Route>
-
-          <Route path="/jobs">
-            {/* <Jobs /> */}
-          </Route> 
-
-    </Switch>
   </Router>
+  </>
+  
     );
 };
 
