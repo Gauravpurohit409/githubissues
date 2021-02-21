@@ -13,7 +13,7 @@ const Home = (props) => {
     const [flag,setFlag] = useState(0);
     const fetchIssues = () =>{
         fetch(
-            `http://api.github.com/repos/${props.owner}/${props.repo}/issues?page=${currentPage}&per_page=40`
+            `https://api.github.com/repos/${props.owner}/${props.repo}/issues?page=${currentPage}&per_page=40`
             ).then((response) =>{
                 // console.log("issue",response.headers.get('Link'))
                 var s = response.headers.get('Link').split(",")[1].split("page=")[1]
